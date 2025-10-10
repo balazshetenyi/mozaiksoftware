@@ -1,8 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mozaik Software Solutions
 
-## Getting Started
+A modern, responsive portfolio website for Mozaik Software Solutions - showcasing our expertise in building scalable software, websites, and mobile applications.
 
-First, run the development server:
+## 🚀 Features
+
+- **Responsive Design** - Fully responsive across all devices
+- **Dark Mode** - Seamless dark/light theme switching
+- **Smooth Animations** - Powered by Framer Motion
+- **Contact Form** - EmailJS integration for contact submissions
+- **Modern UI** - Clean, professional design with gradient accents
+- **SEO Optimized** - Built with Next.js for optimal performance
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org) with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Email Service:** EmailJS
+- **Deployment:** Vercel
+
+## 📋 Prerequisites
+
+- Node.js 18+ installed
+- npm, yarn, pnpm, or bun package manager
+
+## 🔧 Getting Started
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/mozaiksoftware.git
+cd mozaiksoftware
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. **Set up environment variables**
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+4. **Run the development server**
 
 ```bash
 npm run dev
@@ -10,27 +62,68 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Open your browser**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📧 EmailJS Setup
 
-## Learn More
+1. Create a free account at [EmailJS](https://www.emailjs.com/)
+2. Create an email service (Gmail, Outlook, etc.)
+3. Create an email template with variables: `{{from_name}}`, `{{from_email}}`, `{{message}}`
+4. Copy your Service ID, Template ID, and Public Key to `.env.local`
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── About.tsx       # About section
+│   │   ├── Contact.tsx     # Contact form with EmailJS
+│   │   ├── Footer.tsx      # Footer component
+│   │   ├── Hero.tsx        # Hero/landing section
+│   │   ├── Navbar.tsx      # Navigation bar
+│   │   ├── Services.tsx    # Services showcase
+│   │   └── ThemeProvider.tsx # Theme context provider
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # Root layout
+│   └── page.tsx            # Main page
+└── public/
+    └── mozaiksoftwarelogo.png # Company logo
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+### Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy is using the [Vercel Platform](https://vercel.com):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy!
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/mozaiksoftware)
+
+## 📝 License
+
+© 2025 Mozaik Software Solutions. All rights reserved.
+
+## 📞 Contact
+
+**Address:**
+Suite RA01
+195-197 Wood Street
+London
+E17 3NU
+
+**Email:** info@mozaiksoftwaresolutions.com
+
+**Website:** [mozaiksoftwaresolutions.com](https://mozaiksoftwaresolutions.com)
+
+---
+
+Built with ❤️ by Mozaik Software Solutions

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Professional software, web, and mobile app development services tailored to your business needs.",
     siteName: "Mozaik Software Solutions",
     type: "website",
-    url: "https://mozaiksoftware.com",
+    url: "https://www.mozaiksoftwaresolutions.com",
     images: [
       {
         url: "/og-image.png",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  metadataBase: new URL("https://mozaiksoftware.com"),
+  metadataBase: new URL("https://www.mozaiksoftwaresolutions.com"),
 };
 
 export default function RootLayout({
